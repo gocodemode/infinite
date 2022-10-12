@@ -51,4 +51,6 @@ module.exports = {
         filename: "index_bundle.js",
         publicPath: "/"
     },
+    devtool: "source-map", // https://survivejs.com/webpack/building/source-maps/#inline-source-map-types
+    
 }
