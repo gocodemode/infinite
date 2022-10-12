@@ -52,5 +52,9 @@ module.exports = {
         publicPath: "/"
     },
     devtool: "source-map", // https://survivejs.com/webpack/building/source-maps/#inline-source-map-types
+    devServer: {
+        historyApiFallback: true, // https://jaxenter.com/build-reactjs-history-api-fallback-153122.html
+        contentBase: path.resolve(__dirname, './dist'),
+    },
     
 }
