@@ -56,5 +56,9 @@ module.exports = {
         historyApiFallback: true, // https://jaxenter.com/build-reactjs-history-api-fallback-153122.html
         contentBase: path.resolve(__dirname, './dist'),
     },
-    
+    plugins: [
+        new HtmlWebpackPlugin({
+          template: "app/index.html"
+        })
+    ]
 }
